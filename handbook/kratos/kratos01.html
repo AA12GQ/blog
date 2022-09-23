@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker部署前端 | AA12</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script>
+        var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?03cc88aad45993a2c1a00c220db0cac5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+        </script>
+    <meta name="description" content="AA12的 博客">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.88e6a4d9.css" as="style"><link rel="preload" href="/blog/assets/js/app.3760e423.js" as="script"><link rel="preload" href="/blog/assets/js/3.750dd5fc.js" as="script"><link rel="preload" href="/blog/assets/js/1.d9045c12.js" as="script"><link rel="preload" href="/blog/assets/js/13.e43551d2.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.7bf63820.js"><link rel="prefetch" href="/blog/assets/js/11.9b43ebbd.js"><link rel="prefetch" href="/blog/assets/js/12.a571bb56.js"><link rel="prefetch" href="/blog/assets/js/14.75273633.js"><link rel="prefetch" href="/blog/assets/js/15.d8f93f9e.js"><link rel="prefetch" href="/blog/assets/js/4.262f5506.js"><link rel="prefetch" href="/blog/assets/js/5.40851d21.js"><link rel="prefetch" href="/blog/assets/js/6.074c4973.js"><link rel="prefetch" href="/blog/assets/js/7.c81ad62c.js"><link rel="prefetch" href="/blog/assets/js/8.ad3f8952.js"><link rel="prefetch" href="/blog/assets/js/9.d3d6924c.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.88e6a4d9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-5bb33761><div data-v-5bb33761><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-5bb33761 data-v-5bb33761><h3 class="title" data-v-59e6cb88>AA12</h3> <p class="description" data-v-59e6cb88>AA12的 博客</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2022
+      </a></span></div></div> <div class="hide" data-v-5bb33761><header class="navbar" data-v-5bb33761><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">AA12</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      AA12的 博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/AA12GQ" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/1016369645620829" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/aa12-94-92" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://home.cnblogs.com/u/aa12" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-5bb33761></div> <aside class="sidebar" data-v-5bb33761><div class="personal-info-wrapper" data-v-1fad0c41 data-v-5bb33761><!----> <!----> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>4</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>0</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      AA12的 博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/AA12GQ" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/1016369645620829" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/aa12-94-92" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://home.cnblogs.com/u/aa12" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/blog/" class="sidebar-heading clickable router-link-active"><span>最佳实践</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/" aria-current="page" class="sidebar-link">学前必读</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/blog/" class="sidebar-heading clickable router-link-active"><span>迎刃而解</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/blog/" class="sidebar-heading clickable router-link-active"><span>Docker</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/blog/" aria-current="page" class="sidebar-link">Nginx</a></li><li><a href="/blog/" aria-current="page" class="sidebar-link">Mysql</a></li><li><a href="/blog/" aria-current="page" class="sidebar-link">CentOS</a></li><li><a href="/blog/" aria-current="page" class="sidebar-link">Other</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/blog/" class="sidebar-heading clickable router-link-active open"><span>kratos</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/handbook/kratos/kratos01.html" aria-current="page" class="active sidebar-link">go-kratos实战学习01：快速创建项目</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-5bb33761><h3 class="title" data-v-59e6cb88>docker部署前端</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2022
+      </a></span></div></div> <div data-v-5bb33761><div data-v-5bb33761><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">docker部署前端</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>AA12</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2022/9/16</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><p>先用 kratos 快速创建项目来感受一下</p> <h2 id="一、环境准备"><a href="#一、环境准备" class="header-anchor">#</a> 一、环境准备</h2> <p>1.1 安装依赖软件</p> <ul><li><a href="https://github.com/protocolbuffers/protobuf" target="_blank" rel="noopener noreferrer">protoc<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://github.com/protocolbuffers/protobuf-go" target="_blank" rel="noopener noreferrer">protoc-gen-go<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p>安装 protoc：</p> <ul><li>到 <a href="https://github.com/protocolbuffers/protobuf/releases" target="_blank" rel="noopener noreferrer">protobuf release<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 页面，选择适合自己操作系统的文件包。
+或者文档</li> <li>也可以看 <a href="https://grpc.io/docs/protoc-installation/" target="_blank" rel="noopener noreferrer">grpc.io<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 官方安装文档： https://grpc.io/docs/protoc-installation/</li></ul> <p>安装 protoc-gen-go：</p> <ul><li>简单点可以直接用 go install 安装 ：<code>go install google.golang.org/protobuf/cmd/protoc-gen-go@latest</code>
+或者看文档</li> <li>https://developers.google.com/protocol-buffers/docs/reference/go-generated</li></ul> <p>建议开启 GO111MODULE</p> <p>一些相关文档：</p> <ul><li>https://developers.google.com/protocol-buffers</li> <li>https://github.com/protocolbuffers/protobuf</li> <li><a href="https://grpc.io/" target="_blank" rel="noopener noreferrer">https://grpc.io<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>https://github.com/grpc/grpc-go</li></ul> <p>1.2 安装 kratos cli</p> <blockquote><p>go install github.com/go-kratos/kratos/cmd/kratos/v2@latest</p></blockquote> <p>CLI 工具使用说明：<a href="https://go-kratos.dev/docs/getting-started/usage" target="_blank" rel="noopener noreferrer">CLI工具使用<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>go-kratos 和 Go 版本：</p> <blockquote><p>go 1.17
+go-kratos v2.2.1</p></blockquote> <h2 id="二、创建和运行项目"><a href="#二、创建和运行项目" class="header-anchor">#</a> 二、创建和运行项目</h2> <p>2.1 通过 <code>kratos new</code> 命令创建项目模板</p> <p>使用 <code>kratos new</code> 命令创建 quickstart 项目：</p> <blockquote><p>kratos new quickstart</p></blockquote> <p>使用该命令创建项目：</p> <div class="language-go extra-class"><pre class="language-go"><code> kratos <span class="token builtin">new</span> learn_kratos                                                 
+🚀 Creating service learn_kratos<span class="token punctuation">,</span> layout repo is https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span><span class="token keyword">go</span><span class="token operator">-</span>kratos<span class="token operator">/</span>kratos<span class="token operator">-</span>layout<span class="token punctuation">.</span>git<span class="token punctuation">,</span> please wait a moment<span class="token punctuation">.</span>
+
+From https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span><span class="token keyword">go</span><span class="token operator">-</span>kratos<span class="token operator">/</span>kratos<span class="token operator">-</span>layout
+   dd550ca<span class="token punctuation">.</span><span class="token punctuation">.</span>f1c64ad  main       <span class="token operator">-</span><span class="token operator">&gt;</span> origin<span class="token operator">/</span>main
+Updating dd550ca<span class="token punctuation">.</span><span class="token punctuation">.</span>f1c64ad
+Fast<span class="token operator">-</span>forward
+ <span class="token punctuation">.</span>gitignore                               <span class="token operator">|</span> <span class="token number">3</span> <span class="token operator">++</span><span class="token operator">+</span>
+ api<span class="token operator">/</span>helloworld<span class="token operator">/</span>v1<span class="token operator">/</span>error_reason<span class="token punctuation">.</span>proto     <span class="token operator">|</span> <span class="token number">2</span> <span class="token operator">+</span><span class="token operator">-</span>
+ third_party<span class="token operator">/</span>openapi<span class="token operator">/</span>v3<span class="token operator">/</span>annotations<span class="token punctuation">.</span>proto <span class="token operator">|</span> <span class="token number">2</span> <span class="token operator">+</span><span class="token operator">-</span>
+ <span class="token number">3</span> files changed<span class="token punctuation">,</span> <span class="token number">5</span> <span class="token function">insertions</span><span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token function">deletions</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token punctuation">)</span>
+
+CREATED learn_kratos<span class="token operator">/</span><span class="token punctuation">.</span>gitignore <span class="token punctuation">(</span><span class="token number">557</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>Dockerfile <span class="token punctuation">(</span><span class="token number">459</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>LICENSE <span class="token punctuation">(</span><span class="token number">1066</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>Makefile <span class="token punctuation">(</span><span class="token number">2399</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>README<span class="token punctuation">.</span>md <span class="token punctuation">(</span><span class="token number">1062</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>api<span class="token operator">/</span>helloworld<span class="token operator">/</span>v1<span class="token operator">/</span>error_reason<span class="token punctuation">.</span>pb<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">4991</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>api<span class="token operator">/</span>helloworld<span class="token operator">/</span>v1<span class="token operator">/</span>error_reason<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">292</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>api<span class="token operator">/</span>helloworld<span class="token operator">/</span>v1<span class="token operator">/</span>greeter<span class="token punctuation">.</span>pb<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">8074</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>api<span class="token operator">/</span>helloworld<span class="token operator">/</span>v1<span class="token operator">/</span>greeter<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">680</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>api<span class="token operator">/</span>helloworld<span class="token operator">/</span>v1<span class="token operator">/</span>greeter_grpc<span class="token punctuation">.</span>pb<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">3560</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>api<span class="token operator">/</span>helloworld<span class="token operator">/</span>v1<span class="token operator">/</span>greeter_http<span class="token punctuation">.</span>pb<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">2139</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>cmd<span class="token operator">/</span>learn_kratos<span class="token operator">/</span>main<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">1714</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>cmd<span class="token operator">/</span>learn_kratos<span class="token operator">/</span>wire<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">594</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>cmd<span class="token operator">/</span>learn_kratos<span class="token operator">/</span>wire_gen<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">1078</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>configs<span class="token operator">/</span>config<span class="token punctuation">.</span>yaml <span class="token punctuation">(</span><span class="token number">266</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span><span class="token keyword">go</span><span class="token punctuation">.</span>mod <span class="token punctuation">(</span><span class="token number">992</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span><span class="token keyword">go</span><span class="token punctuation">.</span>sum <span class="token punctuation">(</span><span class="token number">18962</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>biz<span class="token operator">/</span>README<span class="token punctuation">.</span>md <span class="token punctuation">(</span><span class="token number">6</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>biz<span class="token operator">/</span>biz<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">128</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>biz<span class="token operator">/</span>greeter<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">1237</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>conf<span class="token operator">/</span>conf<span class="token punctuation">.</span>pb<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">20782</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>conf<span class="token operator">/</span>conf<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">763</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>data<span class="token operator">/</span>README<span class="token punctuation">.</span>md <span class="token punctuation">(</span><span class="token number">7</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>data<span class="token operator">/</span>data<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">474</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>data<span class="token operator">/</span>greeter<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">836</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>server<span class="token operator">/</span>grpc<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">831</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>server<span class="token operator">/</span>http<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">835</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>server<span class="token operator">/</span>server<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">150</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>service<span class="token operator">/</span>README<span class="token punctuation">.</span>md <span class="token punctuation">(</span><span class="token number">10</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>service<span class="token operator">/</span>greeter<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">692</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>internal<span class="token operator">/</span>service<span class="token operator">/</span>service<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token punctuation">(</span><span class="token number">136</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>openapi<span class="token punctuation">.</span>yaml <span class="token punctuation">(</span><span class="token number">1130</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>README<span class="token punctuation">.</span>md <span class="token punctuation">(</span><span class="token number">14</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>errors<span class="token operator">/</span>errors<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">411</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>api<span class="token operator">/</span>annotations<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">1051</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>api<span class="token operator">/</span>client<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">3395</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>api<span class="token operator">/</span>field_behavior<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">3011</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>api<span class="token operator">/</span>http<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">15140</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>api<span class="token operator">/</span>httpbody<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">2671</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>any<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">5909</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>api<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">7734</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>compiler<span class="token operator">/</span>plugin<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">8754</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>descriptor<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">38497</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>duration<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">4895</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>empty<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">2429</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>field_mask<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">8185</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>source_context<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">2341</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span><span class="token keyword">struct</span><span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">3779</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>timestamp<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">6459</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span><span class="token keyword">type</span><span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">6126</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>google<span class="token operator">/</span>protobuf<span class="token operator">/</span>wrappers<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">4042</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>openapi<span class="token operator">/</span>v3<span class="token operator">/</span>annotations<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">2195</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>openapi<span class="token operator">/</span>v3<span class="token operator">/</span>openapi<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">22082</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>validate<span class="token operator">/</span>README<span class="token punctuation">.</span>md <span class="token punctuation">(</span><span class="token number">81</span> bytes<span class="token punctuation">)</span>
+CREATED learn_kratos<span class="token operator">/</span>third_party<span class="token operator">/</span>validate<span class="token operator">/</span>validate<span class="token punctuation">.</span>proto <span class="token punctuation">(</span><span class="token number">31270</span> bytes<span class="token punctuation">)</span>
+
+🍺 Project creation succeeded learn_kratos
+💻 Use the following command to start the project 👇<span class="token punctuation">:</span>
+
+$ cd learn_kratos
+$ <span class="token keyword">go</span> generate <span class="token punctuation">.</span><span class="token operator">/</span><span class="token operator">...</span>
+$ <span class="token keyword">go</span> build <span class="token operator">-</span>o <span class="token punctuation">.</span><span class="token operator">/</span>bin<span class="token operator">/</span> <span class="token punctuation">.</span><span class="token operator">/</span><span class="token operator">...</span> 
+$ <span class="token punctuation">.</span><span class="token operator">/</span>bin<span class="token operator">/</span>learn_kratos <span class="token operator">-</span>conf <span class="token punctuation">.</span><span class="token operator">/</span>configs
+
+                        🤝 Thanks <span class="token keyword">for</span> using Kratos
+        📚 Tutorial<span class="token punctuation">:</span> https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token keyword">go</span><span class="token operator">-</span>kratos<span class="token punctuation">.</span>dev<span class="token operator">/</span>docs<span class="token operator">/</span>getting<span class="token operator">-</span>started<span class="token operator">/</span>start
+
+</code></pre></div><p>如果拉取 github 上的项目模板失败，可以使用 <code>-r</code> 参数指定拉取项目模板地址.</p> <p>比如拉取 gitee 上的模板：</p> <blockquote><p>kratos new learn_kratos -r https://gitee.com/go-kratos/kratos-layout.git</p></blockquote> <p>更多命令的使用：<a href="https://go-kratos.dev/docs/getting-started/usage" target="_blank" rel="noopener noreferrer">kratos 命令使用<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>2.2 使用 go generate 命令生成相应代码</p> <p>生成 proto 源码、wire 等等：</p> <div class="language-go extra-class"><pre class="language-go"><code>$ <span class="token keyword">go</span> generate <span class="token punctuation">.</span><span class="token operator">/</span><span class="token operator">...</span>
+<span class="token keyword">go</span><span class="token punctuation">:</span> downloading github<span class="token punctuation">.</span>com<span class="token operator">/</span><span class="token keyword">go</span><span class="token operator">-</span>kratos<span class="token operator">/</span>kratos<span class="token operator">/</span>v2 v2<span class="token punctuation">.</span><span class="token number">2.1</span>
+<span class="token keyword">go</span><span class="token punctuation">:</span> downloading google<span class="token punctuation">.</span>golang<span class="token punctuation">.</span>org<span class="token operator">/</span>genproto v0<span class="token punctuation">.</span><span class="token number">0.0</span><span class="token operator">-</span><span class="token number">20220222213610</span><span class="token operator">-</span>43724f9ea8cf
+<span class="token keyword">go</span><span class="token punctuation">:</span> downloading github<span class="token punctuation">.</span>com<span class="token operator">/</span><span class="token keyword">go</span><span class="token operator">-</span>logr<span class="token operator">/</span>logr v1<span class="token punctuation">.</span><span class="token number">2.1</span>
+<span class="token keyword">go</span><span class="token punctuation">:</span> downloading github<span class="token punctuation">.</span>com<span class="token operator">/</span><span class="token keyword">go</span><span class="token operator">-</span>logr<span class="token operator">/</span>stdr v1<span class="token punctuation">.</span><span class="token number">2.0</span>
+
+<span class="token operator">...</span> <span class="token operator">...</span>
+</code></pre></div><p>2.3 运行项目</p> <p>使用 <code>kratos run</code> 命令运行项目</p> <div class="language-shell extra-class"><pre class="language-shell"><code>Copy$ kratos run
+INFO <span class="token assign-left variable">msg</span><span class="token operator">=</span>config loaded: config.yaml format: yaml
+INFO <span class="token assign-left variable">msg</span><span class="token operator">=</span><span class="token punctuation">[</span>gRPC<span class="token punctuation">]</span> server listening on: <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:9000
+INFO <span class="token assign-left variable">msg</span><span class="token operator">=</span><span class="token punctuation">[</span>HTTP<span class="token punctuation">]</span> server listening on: <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:8000
+</code></pre></div><p>2.4 测试接口</p> <p>浏览器访问http://localhost:8000/helloworld/kratos 测试一下就会出现以下</p> <div class="language-shell extra-class"><pre class="language-shell"><code>HTTP/1.1 <span class="token number">200</span> OK
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;message&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;Hello kratos&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="三、kratos-项目布局"><a href="#三、kratos-项目布局" class="header-anchor">#</a> 三、kratos 项目布局</h2> <p>基于 kratos-layout 创建的项目，使用的 kratos new 命令：</p> <blockquote><p>kratos new</p></blockquote> <p>生成的目录结构图如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>Copy  <span class="token builtin class-name">.</span>
+├── Dockerfile  
+├── LICENSE
+├── Makefile  
+├── README.md
+├── api // 下面维护了微服务使用的proto文件以及根据它们所生成的go文件
+│   └── helloworld
+│       └── v1
+│           ├── error_reason.pb.go
+│           ├── error_reason.proto
+│           ├── error_reason.swagger.json
+│           ├── greeter.pb.go
+│           ├── greeter.proto
+│           ├── greeter.swagger.json
+│           ├── greeter_grpc.pb.go
+│           └── greeter_http.pb.go
+├── cmd  // 整个项目启动的入口文件
+│   └── server
+│       ├── main.go
+│       ├── wire.go  // 我们使用wire来维护依赖注入
+│       └── wire_gen.go
+├── configs  // 这里通常维护一些本地调试用的样例配置文件
+│   └── config.yaml
+├── generate.go
+├── go.mod
+├── go.sum
+├── internal  // 该服务所有不对外暴露的代码，通常的业务逻辑都在这下面，使用internal避免错误引用
+│   ├── biz   // 业务逻辑的组装层，类似 DDD 的 domain 层，data 类似 DDD 的 repo，而 repo 接口在这里定义，使用依赖倒置的原则。
+│   │   ├── README.md
+│   │   ├── biz.go
+│   │   └── greeter.go
+│   ├── conf  // 内部使用的config的结构定义，使用proto格式生成
+│   │   ├── conf.pb.go
+│   │   └── conf.proto
+│   ├── data  // 业务数据访问，包含 cache、db 等封装，实现了 biz 的 repo 接口。我们可能会把 data 与 dao 混淆在一起，data 偏重业务的含义，它所要做的是将领域对象重新拿出来，我们去掉了 DDD 的 infra层。
+│   │   ├── README.md
+│   │   ├── data.go
+│   │   └── greeter.go
+│   ├── server  // http和grpc实例的创建和配置
+│   │   ├── grpc.go
+│   │   ├── http.go
+│   │   └── server.go
+│   └── <span class="token function">service</span>  // 实现了 api 定义的服务层，类似 DDD 的 application 层，处理 DTO 到 biz 领域实体的转换<span class="token punctuation">(</span>DTO -<span class="token operator">&gt;</span> DO<span class="token punctuation">)</span>，同时协同各类 biz 交互，但是不应处理复杂逻辑
+│       ├── README.md
+│       ├── greeter.go
+│       └── service.go
+└── third_party  // api 依赖的第三方proto
+    ├── README.md
+    ├── google
+    │   └── api
+    │       ├── annotations.proto
+    │       ├── http.proto
+    │       └── httpbody.proto
+    └── validate
+        ├── README.md
+        └── validate.proto
+</code></pre></div><p>整个项目架构流程图，官方的一个架构图：</p> <h2 id="三、kratos-项目布局-2"><a href="#三、kratos-项目布局-2" class="header-anchor">#</a> 三、kratos 项目布局</h2> <p>基于 kratos-layout 创建的项目，使用的 kratos new 命令：</p> <blockquote><p>kratos new</p></blockquote> <p>生成的目录结构图如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>Copy  <span class="token builtin class-name">.</span>
+├── Dockerfile  
+├── LICENSE
+├── Makefile  
+├── README.md
+├── api // 下面维护了微服务使用的proto文件以及根据它们所生成的go文件
+│   └── helloworld
+│       └── v1
+│           ├── error_reason.pb.go
+│           ├── error_reason.proto
+│           ├── error_reason.swagger.json
+│           ├── greeter.pb.go
+│           ├── greeter.proto
+│           ├── greeter.swagger.json
+│           ├── greeter_grpc.pb.go
+│           └── greeter_http.pb.go
+├── cmd  // 整个项目启动的入口文件
+│   └── server
+│       ├── main.go
+│       ├── wire.go  // 我们使用wire来维护依赖注入
+│       └── wire_gen.go
+├── configs  // 这里通常维护一些本地调试用的样例配置文件
+│   └── config.yaml
+├── generate.go
+├── go.mod
+├── go.sum
+├── internal  // 该服务所有不对外暴露的代码，通常的业务逻辑都在这下面，使用internal避免错误引用
+│   ├── biz   // 业务逻辑的组装层，类似 DDD 的 domain 层，data 类似 DDD 的 repo，而 repo 接口在这里定义，使用依赖倒置的原则。
+│   │   ├── README.md
+│   │   ├── biz.go
+│   │   └── greeter.go
+│   ├── conf  // 内部使用的config的结构定义，使用proto格式生成
+│   │   ├── conf.pb.go
+│   │   └── conf.proto
+│   ├── data  // 业务数据访问，包含 cache、db 等封装，实现了 biz 的 repo 接口。我们可能会把 data 与 dao 混淆在一起，data 偏重业务的含义，它所要做的是将领域对象重新拿出来，我们去掉了 DDD 的 infra层。
+│   │   ├── README.md
+│   │   ├── data.go
+│   │   └── greeter.go
+│   ├── server  // http和grpc实例的创建和配置
+│   │   ├── grpc.go
+│   │   ├── http.go
+│   │   └── server.go
+│   └── <span class="token function">service</span>  // 实现了 api 定义的服务层，类似 DDD 的 application 层，处理 DTO 到 biz 领域实体的转换<span class="token punctuation">(</span>DTO -<span class="token operator">&gt;</span> DO<span class="token punctuation">)</span>，同时协同各类 biz 交互，但是不应处理复杂逻辑
+│       ├── README.md
+│       ├── greeter.go
+│       └── service.go
+└── third_party  // api 依赖的第三方proto
+    ├── README.md
+    ├── google
+    │   └── api
+    │       ├── annotations.proto
+    │       ├── http.proto
+    │       └── httpbody.proto
+    └── validate
+        ├── README.md
+        └── validate.proto
+</code></pre></div><p>整个项目架构流程图，官方的一个架构图：</p> <h2 id="三、kratos-项目布局-3"><a href="#三、kratos-项目布局-3" class="header-anchor">#</a> 三、kratos 项目布局</h2> <p>基于 kratos-layout 创建的项目，使用的 kratos new 命令：</p> <blockquote><p>kratos new</p></blockquote> <p>生成的目录结构图如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>Copy  <span class="token builtin class-name">.</span>
+├── Dockerfile  
+├── LICENSE
+├── Makefile  
+├── README.md
+├── api // 下面维护了微服务使用的proto文件以及根据它们所生成的go文件
+│   └── helloworld
+│       └── v1
+│           ├── error_reason.pb.go
+│           ├── error_reason.proto
+│           ├── error_reason.swagger.json
+│           ├── greeter.pb.go
+│           ├── greeter.proto
+│           ├── greeter.swagger.json
+│           ├── greeter_grpc.pb.go
+│           └── greeter_http.pb.go
+├── cmd  // 整个项目启动的入口文件
+│   └── server
+│       ├── main.go
+│       ├── wire.go  // 我们使用wire来维护依赖注入
+│       └── wire_gen.go
+├── configs  // 这里通常维护一些本地调试用的样例配置文件
+│   └── config.yaml
+├── generate.go
+├── go.mod
+├── go.sum
+├── internal  // 该服务所有不对外暴露的代码，通常的业务逻辑都在这下面，使用internal避免错误引用
+│   ├── biz   // 业务逻辑的组装层，类似 DDD 的 domain 层，data 类似 DDD 的 repo，而 repo 接口在这里定义，使用依赖倒置的原则。
+│   │   ├── README.md
+│   │   ├── biz.go
+│   │   └── greeter.go
+│   ├── conf  // 内部使用的config的结构定义，使用proto格式生成
+│   │   ├── conf.pb.go
+│   │   └── conf.proto
+│   ├── data  // 业务数据访问，包含 cache、db 等封装，实现了 biz 的 repo 接口。我们可能会把 data 与 dao 混淆在一起，data 偏重业务的含义，它所要做的是将领域对象重新拿出来，我们去掉了 DDD 的 infra层。
+│   │   ├── README.md
+│   │   ├── data.go
+│   │   └── greeter.go
+│   ├── server  // http和grpc实例的创建和配置
+│   │   ├── grpc.go
+│   │   ├── http.go
+│   │   └── server.go
+│   └── <span class="token function">service</span>  // 实现了 api 定义的服务层，类似 DDD 的 application 层，处理 DTO 到 biz 领域实体的转换<span class="token punctuation">(</span>DTO -<span class="token operator">&gt;</span> DO<span class="token punctuation">)</span>，同时协同各类 biz 交互，但是不应处理复杂逻辑
+│       ├── README.md
+│       ├── greeter.go
+│       └── service.go
+└── third_party  // api 依赖的第三方proto
+    ├── README.md
+    ├── google
+    │   └── api
+    │       ├── annotations.proto
+    │       ├── http.proto
+    │       └── httpbody.proto
+    └── validate
+        ├── README.md
+        └── validate.proto
+</code></pre></div><p>整个项目架构流程图，官方的一个架构图：</p> <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b1b9f31cf8c9498d8379e33a8bc7b295~tplv-k3u1fbpfcp-watermark.image?" alt="650581-20220529220545005-1708774495.png"></p> <p>上面虽然对项目代码结构做了文字说明，但是一定有很多人看了之后不是很明白，因为在 internal 里，有 DDD 这个概念</p> <p>先来看看 DDD 的分层架构，架构图如下：</p> <p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d9b1051fe9c347f0b99e4565771ab04a~tplv-k3u1fbpfcp-watermark.image?" alt="20201222203001733.jpeg"></p> <p>再来对比看看 internal 目录里的 biz、data、service、server、conf 这 5 个目录。</p> <ul><li>biz：文档里说了类似 DDD 的 domain 层，也就是 DDD 架构中的领域层。这里还定义了对业务操作的接口。业务逻辑组装。</li> <li>data：对数据库 db，缓存 cache 的封装，并且实现 biz 中定义的接口。它将领域对象重新拿出来，这里去掉了 DDD 的基础层。</li> <li>service：实现 api 定义的服务层，类似 DDD 的应用层。处理数据传输对象到 biz(领域实体)的转换。同时协同各类 biz 交互，不应处理复杂逻辑。</li> <li>server：http 和 grpc 实例的创建和配置，以及注册对应的 service。</li></ul> <blockquote><p>service -&gt; biz -&gt; data</p></blockquote></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2 小时前</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/" class="prev router-link-active">
+          Other
+        </a></span> <!----></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-ac050c62><li class="level-2" data-v-ac050c62><a href="/blog/handbook/kratos/kratos01.html#一、环境准备" class="sidebar-link reco-side-一、环境准备" data-v-ac050c62>一、环境准备</a></li><li class="level-2" data-v-ac050c62><a href="/blog/handbook/kratos/kratos01.html#二、创建和运行项目" class="sidebar-link reco-side-二、创建和运行项目" data-v-ac050c62>二、创建和运行项目</a></li><li class="level-2" data-v-ac050c62><a href="/blog/handbook/kratos/kratos01.html#三、kratos-项目布局" class="sidebar-link reco-side-三、kratos-项目布局" data-v-ac050c62>三、kratos 项目布局</a></li><li class="level-2" data-v-ac050c62><a href="/blog/handbook/kratos/kratos01.html#三、kratos-项目布局-2" class="sidebar-link reco-side-三、kratos-项目布局-2" data-v-ac050c62>三、kratos 项目布局</a></li><li class="level-2" data-v-ac050c62><a href="/blog/handbook/kratos/kratos01.html#三、kratos-项目布局-3" class="sidebar-link reco-side-三、kratos-项目布局-3" data-v-ac050c62>三、kratos 项目布局</a></li></ul></main></div> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 AA12
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div></div></div>
+    <script src="/blog/assets/js/app.3760e423.js" defer></script><script src="/blog/assets/js/3.750dd5fc.js" defer></script><script src="/blog/assets/js/1.d9045c12.js" defer></script><script src="/blog/assets/js/13.e43551d2.js" defer></script>
+  </body>
+</html>

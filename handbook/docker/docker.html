@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker部署前端 | AA12</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script>
+        var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?03cc88aad45993a2c1a00c220db0cac5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+        </script>
+    <meta name="description" content="AA12的 博客">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.88e6a4d9.css" as="style"><link rel="preload" href="/blog/assets/js/app.3760e423.js" as="script"><link rel="preload" href="/blog/assets/js/3.750dd5fc.js" as="script"><link rel="preload" href="/blog/assets/js/1.d9045c12.js" as="script"><link rel="preload" href="/blog/assets/js/12.a571bb56.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.7bf63820.js"><link rel="prefetch" href="/blog/assets/js/11.9b43ebbd.js"><link rel="prefetch" href="/blog/assets/js/13.e43551d2.js"><link rel="prefetch" href="/blog/assets/js/14.75273633.js"><link rel="prefetch" href="/blog/assets/js/15.d8f93f9e.js"><link rel="prefetch" href="/blog/assets/js/4.262f5506.js"><link rel="prefetch" href="/blog/assets/js/5.40851d21.js"><link rel="prefetch" href="/blog/assets/js/6.074c4973.js"><link rel="prefetch" href="/blog/assets/js/7.c81ad62c.js"><link rel="prefetch" href="/blog/assets/js/8.ad3f8952.js"><link rel="prefetch" href="/blog/assets/js/9.d3d6924c.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.88e6a4d9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-5bb33761><div data-v-5bb33761><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-5bb33761 data-v-5bb33761><h3 class="title" data-v-59e6cb88>AA12</h3> <p class="description" data-v-59e6cb88>AA12的 博客</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2022
+      </a></span></div></div> <div class="hide" data-v-5bb33761><header class="navbar" data-v-5bb33761><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">AA12</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      AA12的 博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/AA12GQ" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/1016369645620829" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/aa12-94-92" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://home.cnblogs.com/u/aa12" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-5bb33761></div> <aside class="sidebar" data-v-5bb33761><div class="personal-info-wrapper" data-v-1fad0c41 data-v-5bb33761><!----> <!----> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>4</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>0</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      AA12的 博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/AA12GQ" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/1016369645620829" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/aa12-94-92" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://home.cnblogs.com/u/aa12" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/blog/" class="sidebar-heading clickable router-link-active"><span>最佳实践</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/" aria-current="page" class="sidebar-link">学前必读</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/blog/" class="sidebar-heading clickable router-link-active"><span>迎刃而解</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/blog/" class="sidebar-heading clickable router-link-active open"><span>Docker</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/handbook/docker/docker.html" aria-current="page" class="active sidebar-link">docker部署前端</a></li></ul></section></li><li><a href="/blog/" aria-current="page" class="sidebar-link">Nginx</a></li><li><a href="/blog/" aria-current="page" class="sidebar-link">Mysql</a></li><li><a href="/blog/" aria-current="page" class="sidebar-link">CentOS</a></li><li><a href="/blog/" aria-current="page" class="sidebar-link">Other</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/blog/" class="sidebar-heading clickable router-link-active"><span>kratos</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-5bb33761><h3 class="title" data-v-59e6cb88>docker部署前端</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2022
+      </a></span></div></div> <div data-v-5bb33761><div data-v-5bb33761><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">docker部署前端</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>AA12</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2021/12/12</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="为什么需要docker"><a href="#为什么需要docker" class="header-anchor">#</a> 为什么需要Docker？</h1> <blockquote><p>使用docker的主要目标是容器化。也就是为你的应用程序提供一致的环境，而不依赖于它运行的主机。 想象一下你是否也会遇到下面这个场景，你在本地开发了你的应用程序，它很可能有很多的依赖环境或包，甚至对依赖的具体版本都有严格的要求，当开发过程完成后，你希望将应用程序部署到web服务器。这个时候你必须确保所有依赖项都安装正确并且版本也完全相同，否则应用程序可能会崩溃并无法运行。如果你想在另一个web服务器上也部署该应用程序，那么你必须从头开始重复这个过程。这种场景就是Docker发挥作用的地方。 对于运行我们应用程序的主机，不管是笔记本电脑还是web服务器，我们唯一需要做的就是运行一个docker容器平台。从以后，你就不需要担心你使用的是MacOS，Ubuntu，Arch还是其他。你只需定义一次应用，即可随时随地运行。</p></blockquote> <h2 id="写在前面"><a href="#写在前面" class="header-anchor">#</a> 写在前面</h2> <blockquote><p>今天我们用 docker 部署我们的仿知乎专栏项目，主要有项目GDColumn、MySQL、Redis。 基于CentOS 8.2系统</p></blockquote> <p><code>项目地址</code>
+https://github.com/AA12GQ/GDColumn</p> <p>项目后端 <code>API</code>文档
+http://bitepig.aa12.cool/swagger/index.html#/</p> <p>项目结构</p> <p><img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132381205755592705.jpg" alt=""></p> <h1 id="_1-安装docker"><a href="#_1-安装docker" class="header-anchor">#</a> 1. 安装docker</h1> <ul><li>更新源</li></ul> <div class="language- extra-class"><pre class="language-text"><code>go yum update
+</code></pre></div><ul><li>安装docker</li></ul> <div class="language- extra-class"><pre class="language-text"><code>go yum install docker 
+</code></pre></div><ul><li>启动docker</li></ul> <div class="language- extra-class"><pre class="language-text"><code>go systemctl start docker
+</code></pre></div><ul><li>查看是否启动成功</li></ul> <div class="language- extra-class"><pre class="language-text"><code>go systemctl status docker  
+</code></pre></div><p><img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132381804081446913.jpg" alt=""></p> <ul><li>查看所有的镜像</li></ul> <div class="language- extra-class"><pre class="language-text"><code>go docker images
+</code></pre></div><ul><li>查看所有的容器状态</li></ul> <div class="language- extra-class"><pre class="language-text"><code>go docker ps -a
+</code></pre></div><h1 id="_2-镜像启动"><a href="#_2-镜像启动" class="header-anchor">#</a> 2. 镜像启动</h1> <h2 id="_2-1-mysql"><a href="#_2-1-mysql" class="header-anchor">#</a> 2.1 MySQL</h2> <h3 id="_2-1-1-拉取"><a href="#_2-1-1-拉取" class="header-anchor">#</a> 2.1.1 拉取</h3> <div class="language- extra-class"><pre class="language-text"><code>docker pull mysql:tag 
+</code></pre></div><p>我这里的<code>tag</code>是mysql 的 <code>8.0</code> 版本，如果不指定就默认是最新版本
+<img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132382344039366657.jpg" alt=""></p> <blockquote><p>我这里是因为已经拉取了，下面列出拉取成功的例子</p></blockquote> <p><img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132382530333573121.jpg" alt=""> <code>docker images</code> 查看镜像</p> <p><img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132383070425710593.jpg" alt=""></p> <h3 id="_2-1-2-启动"><a href="#_2-1-2-启动" class="header-anchor">#</a> 2.1.2 启动</h3> <p>启动mysql容器要保证宿主机的3306没有被占用，或者你也可以用其他端口进行映射，我这里把宿主机的3306端口停了，所以就用3306端口进行映射了。</p> <div class="language- extra-class"><pre class="language-text"><code>docker run --name mysql -v /var/lib/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -p 33061:3306 -d mysql:8.0 
+</code></pre></div><p>说明一下这些参数</p> <div class="language- extra-class"><pre class="language-text"><code>--name mysql 
+表示将这个容器命名为mysql
+
+-v /var/lib/mysql:/var/lib/mysql 
+表示将宿主机的 /var/lib/mysql 卷映射到容器里的 /var/lib/mysql 卷中，这里是为了我们能够把这个数据保存在宿主机中，防止容器删掉就没了。
+
+-e MYSQL_ROOT_PASSWORD=root 
+表示MySQL的密码我这里设置了root
+
+-p 33061:3306
+将宿主机的3306端口映射到容器的33061端口
+
+-d 
+后台运行
+
+mysql:8.0 
+使用mysql:8.0这个镜像
+</code></pre></div><p><img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132383421975494657.jpg" alt=""></p> <h2 id="_2-2-redis"><a href="#_2-2-redis" class="header-anchor">#</a> 2.2 Redis</h2> <h3 id="_2-2-1-拉取"><a href="#_2-2-1-拉取" class="header-anchor">#</a> 2.2.1 拉取</h3> <div class="language- extra-class"><pre class="language-text"><code>docker pull redis 1 
+</code></pre></div><p>这里我们没有指定版本，所以是 <code>latest</code> 最新版本
+<img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132383561813590017.jpg" alt=""></p> <div class="language- extra-class"><pre class="language-text"><code>docker images //结果与上方相同 
+</code></pre></div><h1 id="_3-dockerfile"><a href="#_3-dockerfile" class="header-anchor">#</a> 3. Dockerfile</h1> <p><strong><code>注意：某些步骤不是唯一的，可以根据自己的需要修改诸如文件路径、最终可执行文件的名称等</code></strong></p> <div class="language- extra-class"><pre class="language-text"><code>FROM golang:alpine AS builder
+
+#为我们的镜像设置必要的环境变量
+ENV GO111MODULE=on \
+GOPROXY=https://goproxy.cn,direct \
+CGO_ENABLED=0 \
+GOOS=linux \
+GOARCH=amd64
+
+#镜像作者
+MAINTAINER &quot;AA12GQ&quot;
+
+#移动到工作目录：/build
+WORKDIR /build
+
+#复制项目中的 go.mod 和 go.sum文件并下载依赖信息
+COPY go.mod .
+COPY go.sum .
+RUN go mod download
+
+#将代码复制到容器中
+COPY . .
+
+#将我们的代码编译成二进制可执行文件
+RUN go build -o gdcolumn .
+RUN go run main.go migrate up
+
+###################
+#接下来创建一个小镜像
+###################
+FROM debian:stretch-slim
+
+COPY .env /
+COPY ./wait-for.sh /
+
+#从builder镜像中把可执行文件拷贝到当前目录
+COPY --from=builder /build/gdcolumn /
+
+RUN set -eux \
+    &amp;&amp; apt-get update \
+    &amp;&amp; apt-get install -y --no-install-recommends netcat \
+    &amp;&amp; chmod 755 wait-for.sh
+
+#需要运行的命令
+ENTRYPOINT [&quot;/gdcolumn&quot;]
+</code></pre></div><h4 id="dockerfile解析"><a href="#dockerfile解析" class="header-anchor">#</a> Dockerfile解析</h4> <h5 id="from"><a href="#from" class="header-anchor">#</a> From</h5> <p>我们正在使用基础镜像<code>golang:alpine</code>来创建我们的镜像。这和我们要创建的镜像一样是一个我们能够访问的存储在Docker仓库的基础镜像。这个镜像运行的是alpine Linux发行版，该发行版的大小很小并且内置了Go，非常适合我们的用例。有大量公开可用的Docker镜像，请查看https://hub.docker.com/_/golang</p> <h5 id="env"><a href="#env" class="header-anchor">#</a> Env</h5> <p>用来设置我们编译阶段需要用的环境变量。</p> <h5 id="workdir-copy-run"><a href="#workdir-copy-run" class="header-anchor">#</a> WORKDIR，COPY，RUN</h5> <p>这几个命令做的事都写在注释里了，很好理解。</p> <h5 id="export-cmd"><a href="#export-cmd" class="header-anchor">#</a> EXPORT，CMD</h5> <p>最后，我们声明服务端口，因为我们的应用程序监听的是这个端口并通过这个端口对外提供服务。并且我们还定义了在我们运行镜像的时候默认执行的命令<code>CMD [&quot;/gdcolumn&quot;]</code>。</p> <ul><li>然后将我们的项目git下来</li> <li>然后进行我们配置的编写</li> <li>这里注意要填宿主机的ip地址，因为docker是进程隔离的状态，所以我们不能填127.0.0.1！并且要确保这几个端口的安全组已经开了！</li></ul> <p><img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132384658523422721.jpg" alt="">
+然后我们就可以进行docker build了</p> <div class="language- extra-class"><pre class="language-text"><code>docker build -t gdcolumn . 
+</code></pre></div><p>检查每一个step有没有对应的序列号出来，全都有就是成功了。</p> <p><img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132384869262032897.jpg" alt=""></p> <p>我们跑一下</p> <div class="language- extra-class"><pre class="language-text"><code>docker run -d -p 3000:3000 --name gdcolumn gdcolumn 
+</code></pre></div><p>发现没跑起来，所以就</p> <div class="language- extra-class"><pre class="language-text"><code>docker logs NAMES  
+</code></pre></div><p>查看日志，发现mysql忘记创建数据库了 我们docker exec进入mysql中进行数据库表的创建
+<img src="https://bitpig-column.oss-cn-hangzhou.aliyuncs.com/AA12/132385099814535169.jpg" alt="">
+这里创建你项目相对应的数据库就好了 然后重启一下我们的容器 全部up起来就好了</p> <h1 id="_4-docker-compose-yml"><a href="#_4-docker-compose-yml" class="header-anchor">#</a> 4. docker-compose.yml</h1> <p>当我们有多个容器需要启动的时候，我们可以用docker-compose.yml进行容器的管理
+使用Compose基本上是一个三步过程：</p> <ol><li>使用<code>Dockerfile</code>定义你的应用环境以便可以在任何地方复制。</li> <li>定义组成应用程序的服务，<code>docker-compose.yml</code> 以便它们可以在隔离的环境中一起运行。</li> <li>执行 <code>docker-compose up</code>命令来启动并运行整个应用程序。</li> <li>示例代码</li></ol> <div class="language- extra-class"><pre class="language-text"><code># yaml 配置
+version: &quot;3.7&quot;
+services:
+  redis507:
+    image: &quot;redis:5.0.7&quot;
+    ports:
+      - &quot;63791:6379&quot;
+  mysql8019:
+    image: &quot;mysql:8.0.19&quot;
+    ports:
+      - &quot;33061:3306&quot;
+    command: &quot;--default-authentication-plugin=mysql_native_password --init-file /data/application/init.sql&quot;
+    environment:
+      MYSQL_ROOT_PASSWORD: &quot;&quot;
+      MYSQL_DATABASE: &quot;gdcolumn&quot;
+      MYSQL_PASSWORD: &quot;&quot;
+    volumes:
+      - ./init.sql:/data/application/init.sql
+  gdcolumn:
+    build: .
+    volumes:
+      - .env:/GDColumn/.env
+    depends_on:
+      - mysql8019
+      - redis507
+    ports:
+      - &quot;3000:3000&quot;
+    stdin_open: true
+    tty: true
+</code></pre></div><p>使用</p> <div class="language- extra-class"><pre class="language-text"><code>docker-compose up //运行 
+docker-compose up -d //后台运行 
+</code></pre></div><p>执行以上代码就可以跑起来了</p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2 小时前</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/handbook/solved/kratos_bug02.html" class="prev">
+          docker部署kratos提示make build 错误
+        </a></span> <span class="next"><a href="/blog/" class="router-link-active">
+          Nginx
+        </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-ac050c62><li class="level-2" data-v-ac050c62><a href="/blog/handbook/docker/docker.html#写在前面" class="sidebar-link reco-side-写在前面" data-v-ac050c62>写在前面</a></li><li class="level-2" data-v-ac050c62><a href="/blog/handbook/docker/docker.html#_2-1-mysql" class="sidebar-link reco-side-_2-1-mysql" data-v-ac050c62>2.1 MySQL</a></li><li class="level-3" data-v-ac050c62><a href="/blog/handbook/docker/docker.html#_2-1-1-拉取" class="sidebar-link reco-side-_2-1-1-拉取" data-v-ac050c62>2.1.1 拉取</a></li><li class="level-3" data-v-ac050c62><a href="/blog/handbook/docker/docker.html#_2-1-2-启动" class="sidebar-link reco-side-_2-1-2-启动" data-v-ac050c62>2.1.2 启动</a></li><li class="level-2" data-v-ac050c62><a href="/blog/handbook/docker/docker.html#_2-2-redis" class="sidebar-link reco-side-_2-2-redis" data-v-ac050c62>2.2 Redis</a></li><li class="level-3" data-v-ac050c62><a href="/blog/handbook/docker/docker.html#_2-2-1-拉取" class="sidebar-link reco-side-_2-2-1-拉取" data-v-ac050c62>2.2.1 拉取</a></li></ul></main></div> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 AA12
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div></div></div>
+    <script src="/blog/assets/js/app.3760e423.js" defer></script><script src="/blog/assets/js/3.750dd5fc.js" defer></script><script src="/blog/assets/js/1.d9045c12.js" defer></script><script src="/blog/assets/js/12.a571bb56.js" defer></script>
+  </body>
+</html>
